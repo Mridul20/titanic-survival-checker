@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+<!-- jQuery and JS bundle w/ Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 0%;
+  margin-left: 5%;
+  border-radius: 20%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background:#800000;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+body{
+    background: #e3eeff;
+}
+.btx {
+     position: absolute;
+     top: 5%;
+     left: 95%;
+     transform: translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%);
+     background-color: #555;
+     color: white;
+     font-size: 16px;
+     padding: 12px 24px;
+     border: none;
+     cursor: pointer;
+     border-radius: 5px;
+     text-align: center;
+   }
+
+</style>
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid">
+      <img src = 'static/mridul.jpg' height = "250" style = "position: absolute; top:0% ; left: 75%" >
+        <div class="container">
+          <h1 class="display-4">Hi I'm Mridul Mittal</h1>
+          <p class="lead">2nd year undergad student at IIITA. ML and DL enthusiast </p>
+          <a href = "{{url_for('index')}}"><button class="btx" >Home</button></a>
+        </div>
+      </div>
+    
+      <p>Approach behind the model...
+        <br>
+            This is a simple calssification problem of whether a person will survive or not.We have quite a few algorithm for such binary classification problem.
+            <ul>
+                <li>Support Vector Machines</li>
+                <li>KNN or K-Nearest Neighbors</li>
+                <li>Random Forest</li>
+                <li>Gaussian Naive Bayes and many more...</li></ul>
+              After training the dataset with each model and using differnt metrics to evaluate like k-fold cross validation and F1 score I came to a conclusion that the Random Forest Classifier gives the highest accuracy.<br>
+              It gives an accuracy of <b>94.52%</b> <br><br>
+              There are a few different datasets available for this project on the internet, I have used the one from kaggle. Here is the link for the dataset - <a href = "https://www.kaggle.com/c/titanic/data">Click to Download.</a>
+              
+        </p>
+      
+      <br><br><br><br><br>
+      <p>Follow me on social media..</p>
+   
+      <!-- Add font awesome icons -->
+      <a href="https://www.facebook.com/mridul.mittal.90/" class="fa fa-facebook"></a>
+      <a href="https://twitter.com/MridulMittal20" class="fa fa-twitter"></a>
+      <a href="https://www.snapchat.com/add/mridul_2008" class="fa fa-snapchat-ghost"></a>
+      <a href="https://www.linkedin.com/in/mridul-mittal-6463231a8/" class="fa fa-linkedin"></a>
+      <a href="https://www.instagram.com/mridul_2008/" class="fa fa-instagram"></a>
+      <a href="mailto:mridulmittal20@gmail.com" class="fa fa-google"></a>
+
+</body>
+</html>
