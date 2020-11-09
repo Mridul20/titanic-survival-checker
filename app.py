@@ -15,7 +15,7 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 app = Flask(__name__,template_folder = 'templates')
 app.debug = True
 
-model = pickle.load(open('D:\\Github\\Titanic-Machine-Learning-from-Disaster\\model.pkl', 'rb'))
+model = pickle.load(open('model.pkl', 'rb'))
 
 app.config['SECRET_KEY'] = "mysecretkey"
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' +os.path.join(basedir,'data.sqlite')
