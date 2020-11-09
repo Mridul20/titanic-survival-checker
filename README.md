@@ -1,12 +1,5 @@
-# Titanic-Machine-Learning-from-Disaster
 
-EDA on the legendary Titanic ML problem.
-
-
-### Author
- **[Mridul Mittal.](https://github.com/Mridul20)**
- 
- ## Description
+### Description
 
 A web application made using Python's Flask that uses the a classification algo to predict whether a person would survive the titanic disaster.
 
@@ -33,3 +26,20 @@ Here is a run through of how to set up the application:
 - CSS
 - Bootstrap 4.3.1
 - Flask
+
+## Technologies Used
+
+- Python 3.6.8
+- HTML
+- CSS
+- Bootstrap 4.3.1
+- Flask
+
+# Screenshots
+
+![alt text](static/ss1.jpg)
+![alt text](static/ss2.jpg)
+
+
+## Author
+ **[Mridul Mittal.](https://github.com/Mridul20)**
